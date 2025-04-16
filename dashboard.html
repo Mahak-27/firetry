@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container dashboard">
+        <h2>Fire Detection Dashboard</h2>
+        <div class="video-container">
+            <video id="cameraFeed" width="640" height="480" autoplay muted></video>
+        </div>
+        <div class="controls">
+            <button id="startCameraBtn">Start Camera</button>
+            <button id="stopCameraBtn" disabled>Stop Camera</button>
+            <button id="startDetectionBtn">Start Detection</button>
+            <button id="stopDetectionBtn" disabled>Stop Detection</button>
+        </div>
+        <div id="alert-container" class="alerts">
+            </div>
+        <button id="logoutBtn">Log Out</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
